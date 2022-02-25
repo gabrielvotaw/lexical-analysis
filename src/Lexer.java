@@ -29,13 +29,13 @@ import java.util.TreeMap;
  * SOFTWARE.
  */
 
-// A simple lexical analyzer for a possible compiler
+// simple lexical analyzer for a possible compiler
 public class Lexer {   
 
     /**
      * tokenize
-     * Tokenizes code from a file into tokens and outputs tokens to the terminal
-     * @param fileName The path to the file containing code to be tokenized
+     * tokenizes code from a file into tokens and outputs tokens to the terminal
+     * @param fileName path to the file containing code to be tokenized
      */
     public static void tokenize(String fileName) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
@@ -108,9 +108,9 @@ public class Lexer {
     
     /**
      * isSymbol
-     * Checks if a character is a symbol in the language
-     * @param ch The character to be checked
-     * @return True or false, if the character is a symbol
+     * checks if a character is a valid symbol in the language
+     * @param ch the character to be checked
+     * @return if the character is a symbol
      */
     private static boolean isSymbol(int ch) {
         return (ch == '=' || ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%' || 
@@ -120,8 +120,8 @@ public class Lexer {
    
     /**
      * loadCharMap
-     * Loads a TreeMap with valid characters for the language and their relative tokens
-     * @param map The TreeMap to be loaded
+     * loads a TreeMap with valid characters for the language and their relative tokens
+     * @param map the TreeMap to be loaded
      */
     private static void loadCharMap(TreeMap map) {
         map.put("if", "IF");
