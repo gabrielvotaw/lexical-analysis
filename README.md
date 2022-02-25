@@ -1,2 +1,2 @@
 # lexical-analysis
- Lexical analyzer for a simple, controlled, mock programming language.
+ Lexical analyzer for a mock programming language.
