@@ -1,8 +1,5 @@
 package lexicalanalysis;
 
-// Name: Gabriel Votaw
-// Project Partner's Name: Austin Kirk
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
